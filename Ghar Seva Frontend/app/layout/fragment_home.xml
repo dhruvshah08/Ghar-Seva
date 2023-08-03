@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/other_lighter_blue"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--        SLIDESHOW OF OFFERS-->
+                <!--        <androidx.recyclerview.widget.RecyclerView-->
+                <!--            android:layout_marginTop="50dp"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="600px"-->
+                <!--            android:id="@+id/listOfOffers"-->
+                <!--            >-->
+                <!--        </androidx.recyclerview.widget.RecyclerView>-->
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/my_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tabGravity="center"
+                    android:id="@+id/my_tablayout"
+                    app:tabBackground="@drawable/recommendation_card"
+                    app:tabIndicatorHeight="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/my_pager"/>
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+
+                android:columnCount="2"
+                android:rowCount="4">
+
+                <Button
+                    android:id="@+id/btnACRepair"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:drawableTop="@drawable/ac"
+                    android:paddingTop="10dp"
+                    android:textSize="11dp"
+                    android:text="AC Repair">
+                </Button>
+
+                <Button
+                    android:id="@+id/btnSalon"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:drawableTop="@drawable/salon"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="11dp"
+                    android:text="Salon" />
+
+                <Button
+                    android:id="@+id/btnSpa"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:drawableTop="@drawable/spa"
+                    android:paddingTop="10dp"
+                    android:textSize="11dp"
+                    android:text="Spa" />
+
+                <Button
+                    android:id="@+id/btnSanitizing"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="20dp"
+                    android:drawableTop="@drawable/cleaning"
+                    android:paddingTop="10dp"
+                    android:textSize="11dp"
+                    android:text="Sanitization" />
+
+                <Button
+                    android:id="@+id/btnElectricians"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:drawableTop="@drawable/glove"
+                    android:paddingTop="10dp"
+                    android:textSize="11dp"
+                    android:text="Electricians" />
+                <Button
+                    android:id="@+id/btnCarpenters"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:drawableTop="@drawable/carpenter"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Carpenters" />
+
+                <Button
+                    android:id="@+id/btnElectronicGoods"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:drawableTop="@drawable/microwave"
+                    android:paddingTop="10dp"
+                    android:textSize="11dp"
+                    android:text="Electronic\n Goods" />
+
+                <Button
+                    android:id="@+id/btnHomePainting"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:drawableTop="@drawable/paint"
+                    android:paddingTop="10dp"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Home \n Painting" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnPestControl"
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:drawableLeft="@drawable/pestcontrol"
+                android:paddingTop="10dp"
+                android:textSize="11dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Pest Control" />
+        </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

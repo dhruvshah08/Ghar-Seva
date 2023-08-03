@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/innerArea"
+        android:background="@drawable/booking_card_border"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_font"
+            android:text="ELECTRONICGOODS"
+            android:letterSpacing="0.005"
+            android:textSize="21dp"
+            android:textFontWeight="800"
+            android:id="@+id/txtServiceType"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_font"
+            android:letterSpacing="0.005"
+            android:textSize="21dp"
+            android:textFontWeight="800"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_font"
+            android:hint="31-10-2021 at 19:26"
+            android:textFontWeight="800"
+            android:id="@+id/txtTime"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Details:"
+            android:fontFamily="@font/merriweatherblackitalic"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_font"
+            android:hint="9999999999"
+            android:layout_marginTop="5dp"
+            android:textFontWeight="800"
+            android:id="@+id/txtCustomerPhoneNumber"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCustomerAddress"
+            android:hint="900,XYZ ABC buliding,Near Street Name,City,State,India-Pinxode"
+            android:fontFamily="@font/text_font"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Provider Details:"
+            android:fontFamily="@font/merriweatherblackitalic"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="XYZ Cool Services"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtServiceProviderName"
+            android:fontFamily="@font/text_font"
+            android:textFontWeight="800"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_font"
+            android:hint="900,XYZ ABC buliding,Near Street Name,City,State,India-Pinxode"
+            android:id="@+id/txtServiceProviderAddress"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_font"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--Details to Show:-->
+<!--order date time-->
+<!--Customer Phone number address-->
+<!--Service provider type name-->

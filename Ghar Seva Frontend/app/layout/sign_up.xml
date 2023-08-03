@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/other_lighter_blue"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    Image Holder-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="60dp"
+        >
+
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            android:src="@drawable/finalicon4" />
+    </LinearLayout>
+
+    <!--    Login Credentials-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txtEmailID"
+            android:textColor="@color/blackish"
+            android:fontFamily="@font/text_font"
+            android:hint="Email" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txtPassword"
+            android:textColor="@color/blackish"
+            android:inputType="textPassword"
+            android:fontFamily="@font/text_font"
+            android:hint="Password" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txtConfirmPassword"
+            android:textColor="@color/blackish"
+            android:fontFamily="@font/text_font"
+            android:inputType="textPassword"
+            android:hint="Confirm Password" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/registration_buttons_rounded"
+            android:fontFamily="@font/generic_button_font"
+            android:letterSpacing="0.3"
+            android:padding="20dp"
+            android:text="Sign Up"
+            android:textColor="@color/blackish"
+            android:textSize="24dp" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSignUpWithGoogle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@drawable/registration_buttons_rounded"-->
+<!--            android:drawableLeft="@drawable/google"-->
+<!--            android:fontFamily="@font/google_button_font"-->
+<!--            android:padding="15dp"-->
+<!--            android:letterSpacing="0.1"-->
+<!--            android:text="Sign Up With Google"-->
+<!--            android:textColor="@color/blackish"-->
+<!--            android:textSize="16dp" />-->
+         <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:letterSpacing="0.1"
+             android:visibility="gone"
+             android:id="@+id/btnSignUpWithGoogle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/btnSignInOption"
+            android:paddingTop="15dp"
+            android:paddingLeft="20dp"
+            android:fontFamily="@font/buttons_font"
+            android:textColor="@color/blackish"
+            android:background="@color/transparent"
+            android:textSize="24dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
